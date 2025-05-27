@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Axcess Repairs - Aurora IL Auto Mechanic</title>
+  <meta name="description" content="Auto repairs, towing, and junk car services in Aurora, IL." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #222;
+      background: #fff;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    header, section, footer {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
+      background-color: #f8f8f8;
+      border-bottom: 1px solid #eaeaea;
+    }
+
+    nav a {
+      font-weight: 500;
+      color: #444;
+    }
+
+    nav a:hover {
+      color: #000;
+    }
+
+    .hero {
+      background: url('images/hero-bg.jpg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 6rem 2rem;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero h2 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-bottom: 1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: #fa823f;
+      color: white;
+      border-radius: 4px;
+      font-weight: 600;
+      margin-top: 1rem;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .about-content, .service-section, .review-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .about-text, .scrollable-list {
+      flex: 1 1 300px;
+      max-width: 500px;
+    }
+
+    .about-images {
+      flex: 1 1 300px;
+      max-width: 500px;
+    }
+
+    .about-images img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .service-section img {
+      height: auto;
+      max-height: none;
+      width: auto;
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    .why-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .why-item img {
+      width: 24px;
+      height: 24px;
+    }
+
+    .review-box {
+      background: #f0f0f0;
+      padding: 1.5rem;
+      border-radius: 6px;
+      flex: 1 1 280px;
+      text-align: center;
+    }
+
+    .map-container iframe {
+      width: 100%;
+      max-width: 100%;
+      height: 400px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    footer {
+      background: #111;
+      color: #eee;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.875rem;
+    }
+
+    footer a {
+      color: #fa823f;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#why">Why Us</a>
+    <a href="#services">Services</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#hiring">We're Hiring</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Axcess Repairs</h1>
+      <h2>Top-Rated Auto Repair Shop & Junk Car Buyer in the Chicagoland Area</h2>
+      <p>We Fix Cars and Pay Cash for Junk Vehicles!</p>
+      <a class="btn" href="tel:6514176553">Call Us Today</a>
+      <p>Auto Service | Repair | Towing | Junk Car</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">Get to Know Us</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>Axcess Repairs offers an extensive range of quality automotive repair services. We offer oil change and engine repair on all car makes and models. Conveniently located in Aurora, IL, we are your go-to neighborhood mechanic.</p>
+        <a class="btn" href="https://form.jotform.com/251446164477058" target="_blank">Sell Your Junk Car</a>
+        <br /><br />
+        <a class="btn" href="https://form.jotform.com/241457353905157" target="_blank">Book a Repair Appointment</a>
+      </div>
+      <div class="about-images">
+        <img src="images/about1.jpg" alt="Axcess Shop Exterior" />
+        <img src="images/about2.jpg" alt="Mechanic at Work" />
+      </div>
+    </div>
+  </section>
+
+  <section id="why">
+    <h2 class="section-title">Why Axcess Repairs</h2>
+    <div class="why-item">
+      <img src="images/checkmark.png" alt="check" />
+      <div>
+        <strong>Quality Supplies:</strong>
+        <p>We use only high-quality consumables for servicing your vehicles.</p>
+      </div>
+    </div>
+    <div class="why-item">
+      <img src="images/checkmark.png" alt="check" />
+      <div>
+        <strong>Expert Mechanics:</strong>
+        <p>Our mechanics undergo rigorous training and apprenticeship before handling cars.</p>
+      </div>
+    </div>
+    <div class="why-item">
+      <img src="images/checkmark.png" alt="check" />
+      <div>
+        <strong>Authentic Auto Parts:</strong>
+        <p>We use authentic auto spare parts straight from manufacturers.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2 class="section-title">Maintenance and Repair Services</h2>
+    <div class="service-section">
+      <img src="images/mechanic.jpg" alt="mechanic" />
+      <div class="scrollable-list">
+        <h4>Mechanical Services:</h4>
+        <ul>
+          <li>Brake pads, rotors, and fluid replacement</li>
+          <li>Engine diagnostics and repairs</li>
+          <li>Transmission service and replacement</li>
+          <li>Timing belt and chain replacement</li>
+          <li>Oil changes and filter replacements</li>
+          <li>Tune-ups and spark plug changes</li>
+          <li>Cooling system repair</li>
+          <li>Suspension and steering repair</li>
+          <li>Drive belt and serpentine belt replacement</li>
+          <li>Exhaust system repair</li>
+        </ul>
+
+        <h4>Electrical & Battery Services:</h4>
+        <ul>
+          <li>Battery replacement</li>
+          <li>Alternator and starter replacement</li>
+          <li>Check engine light diagnostics</li>
+          <li>Fuse and wiring repairs</li>
+          <li>Lighting repair</li>
+        </ul>
+
+        <h4>Climate Control:</h4>
+        <ul>
+          <li>A/C recharging and repair</li>
+          <li>Heater core and blower motor service</li>
+          <li>Cabin air filter replacement</li>
+        </ul>
+
+        <h4>Fluids & Maintenance:</h4>
+        <ul>
+          <li>Transmission fluid service</li>
+          <li>Power steering fluid service</li>
+          <li>Coolant flush</li>
+          <li>Differential service</li>
+          <li>Fuel system cleaning</li>
+        </ul>
+
+        <h4>Tires & Wheels:</h4>
+        <ul>
+          <li>Tire mounting, balancing, and rotation</li>
+          <li>Tire repair or replacement</li>
+          <li>Wheel alignment</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <h2 class="section-title">Client Reviews</h2>
+    <div class="review-section">
+      <div class="review-box">
+        <p>I had an old junk car sitting in my driveway for over a year... Highly recommend! - <strong>Valerie G</strong></p>
+      </div>
+      <div class="review-box">
+        <p>Axcess Repairs made it so easy to sell my junk car... Zero hassle — highly recommend! - <strong>Anthony B.</strong></p>
+      </div>
+      <div class="review-box">
+        <p>They fixed my squeaky brakes fast and cheap... Honest service, no upselling. - <strong>Lenny M.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="map-container">
+    <h2 class="section-title">Find Us</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3058.7754473493697!2d-88.31234548431444!3d41.76723497923109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880ef329c5e9f40b%3A0xa4f5e7c4e99eaf33!2s612%20N%20Broadway%2C%20Aurora%2C%20IL%2060505!5e0!3m2!1sen!2sus!4v1716748750000!5m2!1sen!2sus"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </section>
+
+  <section id="hiring">
+    <h2 class="section-title">Axcess Repairs - We're Hiring</h2>
+    <p>We’re growing fast and looking for skilled team members in Aurora, IL. Join Axcess Repairs as a Mechanic or Driver and be part of a trusted local business that values hard work and community service.</p>
+    <a class="btn" href="https://form.jotform.com/251456448039058" target="_blank">Apply Now</a>
+  </section>
+
+  <footer>
+    <h3>Axcess Repairs</h3>
+    <p>612 N Broadway, Aurora, IL 60505</p>
+    <p>Contact us: <a href="mailto:axcesstrans@gmail.com">axcesstrans@gmail.com</a></p>
+    <p>Tel: <a href="tel:6514176553">651-417-6553</a></p>
+    <p>&copy; 2025 Axcess Repairs. All rights reserved.</p>
+  </footer>
+</body>
+</html>
