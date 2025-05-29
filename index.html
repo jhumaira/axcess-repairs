@@ -31,13 +31,28 @@
       margin: auto;
     }
 
+    /* Updated navigation styling with logo support */
     nav {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
+      align-items: center;
       gap: 2rem;
       padding: 1rem 0;
       background-color: #f8f8f8;
       border-bottom: 1px solid #eaeaea;
+    }
+    
+    /* Container for nav links */
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      flex-grow: 1;
+      justify-content: center;
+    }
+    
+    /* Style for the logo */
+    .nav-logo {
+      max-height: 50px;
     }
 
     nav a {
@@ -81,10 +96,11 @@
       margin-bottom: 1rem;
     }
 
+    /* Updated button styling with red color */
     .btn {
       display: inline-block;
       padding: 0.75rem 1.5rem;
-      background: #fa823f;
+      background: #e74c3c;
       color: white;
       border-radius: 4px;
       font-weight: 600;
@@ -167,17 +183,27 @@
     }
 
     footer a {
-      color: #fa823f;
+      color: #e74c3c;
+    }
+    
+    /* Center the content for the hiring section, including the Apply Now button */
+    #hiring {
+      text-align: center;
     }
   </style>
 </head>
 <body>
   <nav>
-    <a href="#about">About</a>
-    <a href="#why">Why Us</a>
-    <a href="#services">Services</a>
-    <a href="#reviews">Reviews</a>
-    <a href="#hiring">We're Hiring</a>
+    <div class="nav-left">
+      <img src="AxcessRepairsLogo.png" alt="Axcess Repairs Logo" class="nav-logo">
+    </div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#why">Why Us</a>
+      <a href="#services">Services</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#hiring">We're Hiring</a>
+    </div>
   </nav>
 
   <section class="hero">
@@ -234,7 +260,7 @@
   <section id="services">
     <h2 class="section-title">Maintenance and Repair Services</h2>
     <div class="service-section">
-      <img src="images/mechanic.jpg" alt="mechanic" />
+      <img src="images/mechanic2.jpg" alt="mechanic" />
       <div class="scrollable-list">
         <h4>Mechanical Services:</h4>
         <ul>
