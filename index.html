@@ -3,9 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Axcess Repairs - Aurora IL Auto Mechanic</title>
-  <meta name="description" content="Auto repairs, towing, and junk car services in Aurora, IL." />
+  <title>Axcess Repairs | Auto Repair, Towing & Junk Car Buyer in Aurora, IL</title>
+  <meta name="description" content="Top-rated Aurora IL auto repair shop offering engine diagnostics, brake service, towing, and cash for junk cars. Fast, reliable, local. Book your repair today!">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Axcess Repairs",
+    "image": "https://axcessrepairs.com/images/Transparentlogo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "612 N Broadway",
+      "addressLocality": "Aurora",
+      "addressRegion": "IL",
+      "postalCode": "60505",
+      "addressCountry": "US"
+    },
+    "telephone": "+1-651-417-6553",
+    "url": "https://axcessrepairs.com",
+    "openingHours": "Mo-Sa 09:00-18:00",
+    "priceRange": "$$"
+  }
+  </script>
   <style>
     * {
       margin: 0;
@@ -31,28 +51,26 @@
       margin: auto;
     }
 
-    /* Updated navigation styling with logo support */
     nav {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      gap: 2rem;
-      padding: 1rem 0;
+      padding: 1rem 2rem;
       background-color: #f8f8f8;
       border-bottom: 1px solid #eaeaea;
     }
-    
-    /* Container for nav links */
+
+    .nav-left {
+      margin-right: 2rem;
+    }
+
+    .nav-logo {
+      max-height: 80px;
+    }
+
     .nav-links {
       display: flex;
       gap: 2rem;
-      flex-grow: 1;
-      justify-content: center;
-    }
-    
-    /* Style for the logo */
-    .nav-logo {
-      max-height: 50px;
+      flex-wrap: wrap;
     }
 
     nav a {
@@ -70,6 +88,17 @@
       text-align: center;
       padding: 6rem 2rem;
       position: relative;
+    }
+
+    .hero .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: #e74c3c;
+      color: white;
+      border-radius: 4px;
+      font-weight: 600;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
     }
 
     .hero::before {
@@ -96,7 +125,6 @@
       margin-bottom: 1rem;
     }
 
-    /* Updated button styling with red color */
     .btn {
       display: inline-block;
       padding: 0.75rem 1.5rem;
@@ -135,11 +163,17 @@
       border-radius: 8px;
     }
 
-    .service-section img {
+    .service-section img:not(.mechanic-image) {
       height: auto;
       max-height: none;
       width: auto;
       max-width: 100%;
+      border-radius: 8px;
+    }
+
+    .mechanic-image {
+      width: 400px;
+      height:auto;
       border-radius: 8px;
     }
 
@@ -185,17 +219,18 @@
     footer a {
       color: #e74c3c;
     }
-    
-    /* Center the content for the hiring section, including the Apply Now button */
+
     #hiring {
       text-align: center;
     }
   </style>
 </head>
+
+
 <body>
   <nav>
     <div class="nav-left">
-      <img src="AxcessRepairsLogo.png" alt="Axcess Repairs Logo" class="nav-logo">
+      <img src="images/Transparentlogo.png" alt="Axcess Repairs Logo" class="nav-logo">
     </div>
     <div class="nav-links">
       <a href="#about">About</a>
@@ -205,6 +240,7 @@
       <a href="#hiring">We're Hiring</a>
     </div>
   </nav>
+  
 
   <section class="hero">
     <div class="hero-content">
@@ -221,9 +257,9 @@
     <div class="about-content">
       <div class="about-text">
         <p>Axcess Repairs offers an extensive range of quality automotive repair services. We offer oil change and engine repair on all car makes and models. Conveniently located in Aurora, IL, we are your go-to neighborhood mechanic.</p>
-        <a class="btn" href="https://form.jotform.com/251446164477058" target="_blank">Sell Your Junk Car</a>
+        <a class="btn" href="https://form.jotform.com/251480737013149" target="_blank">Sell Your Junk Car</a>
         <br /><br />
-        <a class="btn" href="https://form.jotform.com/241457353905157" target="_blank">Book a Repair Appointment</a>
+        <a class="btn" href="https://form.jotform.com/251480395507157" target="_blank">Book a Repair Appointment</a>
       </div>
       <div class="about-images">
         <img src="images/about1.jpg" alt="Axcess Shop Exterior" />
@@ -260,7 +296,7 @@
   <section id="services">
     <h2 class="section-title">Maintenance and Repair Services</h2>
     <div class="service-section">
-      <img src="images/mechanic2.jpg" alt="mechanic" />
+      <img src="images/mechanic2.jpg" alt="Mechanic repairing car in Aurora IL" class="mechanic-image" />
       <div class="scrollable-list">
         <h4>Mechanical Services:</h4>
         <ul>
@@ -347,7 +383,17 @@
     <p>612 N Broadway, Aurora, IL 60505</p>
     <p>Contact us: <a href="mailto:axcesstrans@gmail.com">axcesstrans@gmail.com</a></p>
     <p>Tel: <a href="tel:6514176553">651-417-6553</a></p>
+    <p>
+      <a href="https://www.google.com/search?q=Axcess+Repairs+Aurora+IL+Google+Reviews" target="_blank">Leave a Google Review</a> |
+      <a href="https://www.yelp.com/biz/axcess-repairs-aurora" target="_blank">Leave a Yelp Review</a>
+    </p>
     <p>&copy; 2025 Axcess Repairs. All rights reserved.</p>
   </footer>
+  
 </body>
 </html>
+
+
+<script
+  src='https://cdn.jotfor.ms/agent/embedjs/01971a4a1f0e7c5686e6820621bb53668657/embed.js?skipWelcome=1&maximizable=1'>
+</script>
