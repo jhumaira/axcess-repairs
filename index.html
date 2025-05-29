@@ -26,6 +26,15 @@
     "priceRange": "$$"
   }
   </script>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  integrity="sha512-..."
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+
+
   <style>
     * {
       margin: 0;
@@ -52,35 +61,60 @@
     }
 
     nav {
-      display: flex;
-      align-items: center;
-      padding: 1rem 2rem;
-      background-color: #f8f8f8;
-      border-bottom: 1px solid #eaeaea;
-    }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #eaeaea;
+  flex-wrap: wrap;
+}
 
-    .nav-left {
-      margin-right: 2rem;
-    }
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* space between logo and links */
+}
 
-    .nav-logo {
-      max-height: 100px;
-    }
+.nav-logo {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
 
-    .nav-links {
-      display: flex;
-      gap: 2rem;
-      flex-wrap: wrap;
-    }
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
 
-    nav a {
-      font-weight: 500;
-      color: #444;
-    }
+.nav-links a {
+  font-weight: 500;
+  color: #444;
+  text-decoration: none;
+}
 
-    nav a:hover {
-      color: #000;
-    }
+.nav-links a:hover {
+  color: #000;
+}
+
+.nav-social-icons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.nav-social-icons a {
+  font-size: 20px;
+  color: #444;
+  transition: color 0.3s ease;
+}
+
+.nav-social-icons a:hover {
+  color: #e74c3c;
+}
+
+
+
 
     .hero {
       background: url('images/hero-bg.jpg') center/cover no-repeat;
@@ -199,6 +233,14 @@
       flex: 1 1 280px;
       text-align: center;
     }
+    .visually-hidden {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
 
     .map-container iframe {
       width: 100%;
@@ -223,7 +265,32 @@
     #hiring {
       text-align: center;
     }
+    .social-icons a {
+  margin: 0 10px;
+  font-size: 24px;
+  color: #333;
+  text-decoration: none;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.social-icons a {
+  color: #333;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #e74c3c; /* Change to your brand color */
+}
+
   </style>
+  
 </head>
 
 
@@ -231,15 +298,27 @@
   <nav>
     <div class="nav-left">
       <img src="images/Transparentlogo.png" alt="Axcess Repairs Logo" class="nav-logo">
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#why">Why Us</a>
+        <a href="#services">Services</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#hiring">We're Hiring</a>
+      </div>
     </div>
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#why">Why Us</a>
-      <a href="#services">Services</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#hiring">We're Hiring</a>
+  
+    <div class="nav-social-icons">
+      <a href="https://www.facebook.com/YourPage" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com/YourHandle" target="_blank" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://www.instagram.com/YourProfile" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@YourUsername" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+      <a href="https://www.yelp.com/biz/YourBusiness" target="_blank" aria-label="Yelp"><i class="fab fa-yelp"></i></a>
+      <a href="https://www.google.com/maps/place/YourBusiness" target="_blank" aria-label="Google Business"><i class="fab fa-google"></i></a>
     </div>
   </nav>
+  
+  
+  
   
 
   <section class="hero">
@@ -347,7 +426,7 @@
     </div>
   </section>
 
-  <section id="reviews">
+  <section id="reviews" class="visually-hidden>
     <h2 class="section-title">Client Reviews</h2>
     <div class="review-section">
       <div class="review-box">
@@ -388,6 +467,9 @@
       <a href="https://www.yelp.com/biz/axcess-repairs-aurora" target="_blank">Leave a Yelp Review</a>
     </p>
     <p>&copy; 2025 Axcess Repairs. All rights reserved.</p>
+
+
+    
   </footer>
   
 </body>
